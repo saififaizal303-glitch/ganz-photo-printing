@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gan.Z Photo & Printing — Photo printing, photo framing aur custom T-shirt printing. WhatsApp par order karein.">
+<meta name="theme-color" content="#111827">
+<title>Gan.Z Photo & Printing | Photo • Frame • T-shirt</title>
+<style>
+:root{
+  --dark:#111827;--dark2:#1f2937;--accent:#f97316;--accent2:#fb923c;
+  --cream:#fffaf5;--white:#fff;--text:#172033;--muted:#667085;
+  --line:#eadfd5;--shadow:0 18px 45px rgba(17,24,39,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--text);background:var(--cream);line-height:1.65}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,calc(100% - 32px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(17,24,39,.96);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-size:22px;font-weight:900}.logo span{color:#fdba74}
+.navlinks{display:flex;gap:22px;font-size:14px;color:#e5e7eb}
+.navlinks a:hover{color:#fdba74}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:12px;font-weight:800;border:0;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:var(--accent);color:#fff;box-shadow:0 10px 24px rgba(249,115,22,.25)}
+.light{background:#fff;color:var(--dark);border:1px solid var(--line)}
+.hero{padding:74px 0 62px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.badge{display:inline-block;background:#ffedd5;color:#c2410c;font-weight:800;font-size:13px;padding:7px 11px;border-radius:999px}
+h1{font-size:clamp(40px,6vw,68px);line-height:1.03;margin:16px 0}
+.hero p{font-size:18px;color:var(--muted);max-width:650px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.hero-card{background:linear-gradient(145deg,#fed7aa,#fb923c);min-height:350px;border-radius:32px;display:grid;place-items:center;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hero-card:before,.hero-card:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.22)}
+.hero-card:before{width:230px;height:230px;top:-70px;right:-50px}.hero-card:after{width:170px;height:170px;bottom:-70px;left:-35px}
+.visual{text-align:center;position:relative;z-index:1;color:#4a2412}
+.visual .icons{font-size:70px;letter-spacing:7px}.visual strong{display:block;font-size:25px;margin-top:8px}
+.trust{display:flex;gap:20px;flex-wrap:wrap;margin-top:24px;color:#475467;font-size:14px}
+section{padding:72px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 34px}
+.section-head h2{font-size:36px;line-height:1.15;margin:0 0 8px}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 8px 25px rgba(17,24,39,.05);transition:.2s}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.card-icon{font-size:40px}.card h3{font-size:21px;margin:10px 0 5px}.card p{color:var(--muted);margin:0 0 16px;font-size:14px}
+.link{color:#c2410c;font-weight:800}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{background:#fff;padding:22px;border-radius:18px;border:1px solid var(--line)}
+.num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#ffedd5;color:#c2410c;font-weight:900}
+.step h3{margin:12px 0 5px}.step p{margin:0;color:var(--muted);font-size:14px}
+.cta{background:var(--dark);color:#fff;border-radius:28px;padding:42px}
+.cta-grid{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.cta h2{font-size:34px;margin:0 0 7px}.cta p{color:#cbd5e1;margin:0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact-box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px}
+.contact-box h3{margin-top:0}.contact-box p{color:var(--muted)}
+footer{background:var(--dark);color:#cbd5e1;text-align:center;padding:25px 16px;font-size:13px}
+.whatsapp{position:fixed;right:18px;bottom:18px;z-index:30;background:#25d366;color:#fff;border-radius:999px;padding:14px 18px;font-weight:900;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+@media(max-width:800px){
+ .navlinks{display:none}.hero{padding-top:45px}.hero-grid{grid-template-columns:1fr}.hero-card{min-height:260px}
+ .cards,.steps,.contact-grid{grid-template-columns:1fr}
+ section{padding:52px 0}.cta-grid{display:block}.cta .btn{margin-top:20px}
+ h1{font-size:44px}.trust{gap:12px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">Gan.Z <span>Photo & Printing</span></a>
+    <nav class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#how">How to Order</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn primary" href="https://wa.me/919355660985?text=Namaste%2C%20mujhe%20printing%20ke%20baare%20mein%20jaankari%20chahiye" target="_blank" rel="noopener">💬 WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">📸 Aapki yaadon ko khaas banayein</span>
+      <h1>Photo, Frame & T-shirt Printing — Ek Hi Jagah</h1>
+      <p>Gan.Z Photo & Printing par apni favourite photos print karwayein, memories ko frame karwayein aur custom T-shirt banwayein. Photo ya design WhatsApp par bhejkar order karein.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://wa.me/919355660985?text=Namaste%2C%20mujhe%20order%20karna%20hai" target="_blank" rel="noopener">📲 Order on WhatsApp</a>
+        <a class="btn light" href="#services">Services Dekhein</a>
+      </div>
+      <div class="trust">
+        <span>✓ Photo Printing</span><span>✓ Custom T-shirts</span><span>✓ Photo Framing</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="visual"><div class="icons">🖼️ 👕 📸</div><strong>Print • Frame • Gift</strong><div>Har khaas pal ke liye</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head"><h2>Hamari Services</h2><p>Aapki requirement ke hisaab se simple aur convenient printing solutions.</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-icon">📸</div><h3>Photo Printing</h3><p>Apni favourite photos ko print karwane ke liye photo WhatsApp par bhejein aur requirement batayein.</p><a class="link" href="https://wa.me/919355660985?text=Photo%20printing%20ke%20liye%20mujhe%20price%20aur%20details%20chahiye" target="_blank">Photo Print →</a></article>
+      <article class="card"><div class="card-icon">🖼️</div><h3>Photo Framing</h3><p>Special memories, gifts aur home display ke liye photo framing options ke baare mein poochhein.</p><a class="link" href="https://wa.me/919355660985?text=Photo%20framing%20ke%20options%20aur%20price%20batayein" target="_blank">Frame Order →</a></article>
+      <article class="card"><div class="card-icon">👕</div><h3>Custom T-shirt</h3><p>Naam, photo ya custom design wali T-shirt printing ke liye apna design bhejein.</p><a class="link" href="https://wa.me/919355660985?text=Custom%20T-shirt%20printing%20ke%20liye%20details%20chahiye" target="_blank">T-shirt Order →</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <div class="section-head"><h2>Order Karna Bahut Easy Hai</h2><p>Bas 3 simple steps.</p></div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>WhatsApp Karein</h3><p>Apni requirement aur photo/design WhatsApp par bhejein.</p></div>
+      <div class="step"><div class="num">2</div><h3>Details Confirm Karein</h3><p>Size, quantity, framing ya printing requirement aur price confirm karein.</p></div>
+      <div class="step"><div class="num">3</div><h3>Order Complete</h3><p>Order ki final details aur delivery/pickup information confirm karein.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta">
+      <div class="cta-grid">
+        <div><h2>Apna Photo ya Design Bhejein</h2><p>WhatsApp par message karein aur apne order ki details poochhein.</p></div>
+        <a class="btn primary" href="https://wa.me/919355660985?text=Namaste%2C%20mujhe%20price%20aur%20order%20ki%20jaankari%20chahiye" target="_blank" rel="noopener">💬 WhatsApp Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head"><h2>Contact Gan.Z</h2><p>Order ya price details ke liye directly contact karein.</p></div>
+    <div class="contact-grid">
+      <div class="contact-box"><h3>📞 Phone / WhatsApp</h3><p><a href="tel:+919355660985"><strong>93556 60985</strong></a></p><a class="btn primary" href="tel:+919355660985">Call Now</a></div>
+      <div class="contact-box"><h3>📍 Address</h3><p>Kathera Road,<br>Rahmati Masjid ke paas</p><a class="btn light" href="https://www.google.com/maps/search/?api=1&query=Kathera%20Road%20Rahmati%20Masjid" target="_blank" rel="noopener">Open in Maps</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<a class="whatsapp" href="https://wa.me/919355660985?text=Namaste%2C%20Gan.Z%20Photo%20%26%20Printing%20ke%20baare%20mein%20jaankari%20chahiye" target="_blank" rel="noopener">💬 WhatsApp</a>
+<footer>© <span id="year"></span> Gan.Z Photo & Printing · Photo • Frame • T-shirt</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
